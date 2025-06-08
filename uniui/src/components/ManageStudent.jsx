@@ -20,7 +20,7 @@ const ManageStudent = () => {
     return (
         <div className='flex flex-col gap-5'>
             <input value={name} onChange={(e)=> setName(e.target.value)} type="text" className='border-2 rounded-full text-center p-[1px]' />
-            <button onClick={handleSubmit} className='border-2 border-black py-2 px-5 rounded-full hover:bg-black hover:text-white transition-all duration-200'>
+            <button onClick={handleSubmit} className='border-2 border-white py-2 px-5 rounded-full hover:bg-white text-white hover:text-black transition-all duration-200'>
                 Add Student</button>
                 {error && <span>{error}</span>}
         </div>

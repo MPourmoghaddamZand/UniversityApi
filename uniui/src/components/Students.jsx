@@ -34,8 +34,8 @@ const Students = () => {
     }
 
     return (
-        <div>
-            <ul className='flex flex-col gap-2'>
+        <div className='bg-blue-50 p-5 rounded-lg'>
+            <ul className='flex flex-col gap-2 h-[250px] overflow-y-scroll'>
                 {student.map((student) => (
                     <li className='grid place-items-center grid-cols-4' key={student.id}>
                         <h2>{student.id}</h2>
